@@ -31,12 +31,10 @@ public class Calculator {
         Sum sum = new Sum();
 
         sum.soma(a);
-        sum.soma(5.5);
+        sum.soma(10);
         sum.soma(a, b);
         sum.soma(a, b, c);
-
-
-
+    
     }
     
 }

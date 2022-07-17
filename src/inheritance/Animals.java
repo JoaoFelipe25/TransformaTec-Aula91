@@ -66,6 +66,25 @@ class Dog extends Animal {
     
 }
 
+class Galo extends Animal{
+
+    private String name;
+
+    public Galo(String food, String name) {
+        super(food);
+        this.name = name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public String getName() {
+        return name;
+    }
+
+}
+
 public class Animals{
     public static void main(String[] args) {
         
@@ -76,6 +95,10 @@ public class Animals{
         Dog dog = new Dog("Racao e umas porcarias que ele acha", "Pudim", "Golden");
         System.out.println("O cachorro " + dog.getName() + " da raca " + dog.getPedigree());
         dog.eat();
+
+        Galo galo = new Galo("milho", "galo da massa");
+        System.out.println("o galo " + galo.getName());
+        galo.eat();
 
 
     }
